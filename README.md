@@ -35,4 +35,11 @@ In case of any errors with packages, type
 
         conda install <name of missing package>
   
-  
+Used packages:
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- sklearn
+- hyperopt
+- datetime
