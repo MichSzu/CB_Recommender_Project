@@ -3,10 +3,15 @@
 It is a univeristy project from Recommenders system class. In this project I worked with real life hotel data. The aim was to create Content-based recommender so that it would recommend apropriate hotel for a user based on given features. Recommender was evaluated on a test set, I wanted to achieve the highest HR@10 possible and perforem better than Amazon Recommender. Firstly I performed basic data manipulation, later I created separate dataframes for users and items instances, so that it would fit to the Content-based recommender. Finally recommender was initialized using different ML model such as LinearRegressionCBUIRecommender, SVRCBUIRecommender, RandomForestCBUIRecommender, XGBoostCBUIRecommender. Optimal parameters for every model were found using hyperopt package. At the end, score of every model was compared with Amazon Recommender on the same data.
 
 HR@10 results achieved using different ML models:
-- a 
-- b
-- c
-- d
+- LinearRegression - 0.231500
+- SVR - 0.043109
+- RandomForest - 0.124576	
+- XGBoost - 0.124576
+
+The best result was achieved with LinearRegression. The worst one was with SVR it might be because I did not tune hyperparamters for that model because it would have taken to long. Here is a table with all results, LinearRegression managed to beat Amazon Recommender.
+
+![image](https://user-images.githubusercontent.com/91895188/236181310-15b95f67-ff9e-48e5-8cb0-cfd89008db7b.png)
+
 
 # Preparing your computer
 1. Install https://www.anaconda.com/download with Python 3.8
