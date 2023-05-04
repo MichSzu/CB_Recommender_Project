@@ -1,4 +1,4 @@
-# CB_Recommednder_Project
+# CB_Recommender_Project
 
 It is a univeristy project from Recommenders system class. In this project I worked with real life hotel data. The aim was to create Content-based recommender so that it would recommend apropriate hotel for a user based on given features. Recommender was evaluated on a test set, I wanted to achieve the highest HR@10 possible and performe better than Amazon Recommender. Firstly I performed basic data manipulation, later I created separate dataframes for users and items instances, so that it would fit to the Content-based recommender. Finally recommender was initialized using different ML model such as LinearRegressionCBUIRecommender, SVRCBUIRecommender, RandomForestCBUIRecommender, XGBoostCBUIRecommender. Optimal parameters for models were found using hyperopt package. At the end, score of every model was compared with Amazon Recommender on the same data.
 
